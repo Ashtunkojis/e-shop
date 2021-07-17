@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+}
+
+
+/* header/nav */
+
+.top-nav {
+    display: inline-block;
+    height: 50px;
+    background-color: #3F3F3F;
+    width: 100%;
+}
+
+.top-a {
+    display: inline-block;
+    color: #CECECE;
+    text-decoration: none;
+    padding: 20px 20px 20px 20px;
+    font-size: 13px;
+}
+
+.right-a {
+    float: right;
+}
+
+.bottom-nav {
+    display: inline-block;
+    height: 150px;
+    background-color: white;
+    width: 100%;
+}
+
+.bottom-nav>a {
+    float: right;
+    color: #CECECE;
+    text-decoration: none;
+    padding: 40px 30px 20px 30px;
+    font-size: 50px;
+}
+
+
+/* container with all product boxes */
+
+.grid-container {
+    display: block;
+    margin: 0px 50px 0px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(300px, auto);
+    grid-gap: 5px;
+}
+
+.grid-item {
+    background-color: #F7F7F7;
+}
+
+.grid-item>img {
+    mix-blend-mode: multiply;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    min-width: 150px;
+    max-width: 300px;
+    min-height: 200px;
+    max-height: 300px;
+}
+
+.grid-brand {
+    display: inline-block;
+    min-width: 100%;
+    font-weight: bold;
+}
+
+.grid-name {
+    display: inline-block;
+}
+
+
+/* selecting grid element to be bigger manually, before finding better way */
+
+.grid-item:nth-child(3) {
+    grid-column: span 2;
+}
+
+.grid-item:nth-child(4) {
+    grid-column: span 2;
+}
+
+.grid-item:nth-child(9) {
+    grid-column: span 2;
+}
+
+.grid-item:nth-child(10) {
+    grid-column: span 2;
+}
+
+.grid-item:nth-child(15) {
+    grid-column: span 2;
+}
+
+.grid-item:nth-child(16) {
+    grid-column: span 2;
+}
