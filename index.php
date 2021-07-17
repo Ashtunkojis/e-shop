@@ -35,9 +35,9 @@ $new = getNew();
 
         <nav class="bottom-nav">
             <a href="accessories.php">Accessories</a>
-            <a href="footwear.php">Footwear</a>
-            <a href="clothing.php">Clothing</a>
-            <a href="index.php">New arrivals</a>
+            <a  href="footwear.php">Footwear</a>
+            <a  href="clothing.php">Clothing</a>
+            <a style="color:#080808" href="index.php">New arrivals</a>
 
         </nav>
     </header>
