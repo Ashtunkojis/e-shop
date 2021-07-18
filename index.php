@@ -34,9 +34,9 @@ $new = getNew();
     <header>
 
         <nav class="bottom-nav">
-            <a href="accessories.php">Accessories</a>
-            <a  href="footwear.php">Footwear</a>
-            <a  href="clothing.php">Clothing</a>
+            <a class="shiny" href="accessories.php">Accessories</a>
+            <a class="shiny" href="footwear.php">Footwear</a>
+            <a class="shiny" href="clothing.php">Clothing</a>
             <a style="color:#080808" href="index.php">New arrivals</a>
 
         </nav>
@@ -44,6 +44,11 @@ $new = getNew();
     <div class="grid-container">
         <?php foreach ($new as $new) : ?>
             <div class="grid-item">
+                <?php foreach ($new['labels'] as $label) : ?>
+                    <div class="<?php echo $label; ?>">
+                        <span><?php echo $label; ?></span>
+                    </div>
+                <?php endforeach;; ?>
                 <img src="http://hdtestapi-env.eba-kx2gjzny.eu-central-1.elasticbeanstalk.com<?php echo $new['image']; ?>" alt="missing_new_arrivals_img">
                 <div class="grid-brand"><?php echo $new['brand'] ?></div>
                 <div class="grid-name"><?php echo $new['name'] ?></div>
@@ -51,6 +56,7 @@ $new = getNew();
 
 
         <?php endforeach;; ?>
+
     </div>
 
 
