@@ -1,5 +1,6 @@
 <?php
 include("./data.php");
+// functions get data from api and then creates new variable with json data as array
 getNewData();
 $new = getNew();
 
@@ -11,20 +12,18 @@ $new = getNew();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-shop</title>
+    <title>New Arrivals</title>
     <link rel="stylesheet" href="./main.css">
 
 </head>
 
 <body>
+    <!-- first nav bar -->
     <header>
-
         <nav class="top-nav">
-
             <a class="top-a" href="#">Men's</a>
             <a class="top-a" href="#">Women's</a>
             <a class="top-a" href="#">Search</a>
-
             <div class="right-a">
                 <a class="top-a" href="#">English</a>
                 <a class="top-a" href="#">My account</a>
@@ -32,8 +31,8 @@ $new = getNew();
             </div>
         </nav>
     </header>
+    <!-- second nav bar -->
     <header>
-    
         <nav class="bottom-nav">
             <a class="shiny" href="accessories.php">Accessories</a>
             <a class="shiny" href="footwear.php">Footwear</a>
@@ -42,6 +41,7 @@ $new = getNew();
                 <span><?php echo count($new) ?> PRODUCTS</span></a>
         </nav>
     </header>
+    <!-- generating content from array -->
     <div class="grid-container">
         <?php foreach ($new as $new) : ?>
             <div class="grid-item">
@@ -54,8 +54,6 @@ $new = getNew();
                 <div class="grid-brand"><?php echo $new['brand'] ?></div>
                 <div class="grid-name"><?php echo $new['name'] ?></div>
             </div>
-
-
         <?php endforeach;; ?>
 
     </div>
