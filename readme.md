@@ -9,7 +9,7 @@ Unzip file or download from GitHub https://github.com/Ashtunkojis/e-shop and ope
 ## Things to improve
 - Hover animation for items.
 - Faster loading speed, curently it takes around 2 sec for new page to load.
-- One page design, where content is generated dynamically with JS.
+- One page design, where content is generated without reloading/linking to another page.
 - Responsive design.
 - Improve design of some item cards.
 - Footer.
