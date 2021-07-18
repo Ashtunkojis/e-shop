@@ -1,4 +1,4 @@
-# E-commerce website exercise for Horion Digital
+# E-commerce website exercise
 
 Front end exercise for e-commerce website, which generates content from API. 
 
