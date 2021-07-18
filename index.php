@@ -13,6 +13,7 @@ $new = getNew();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-shop</title>
     <link rel="stylesheet" href="./main.css">
+
 </head>
 
 <body>
@@ -32,13 +33,13 @@ $new = getNew();
         </nav>
     </header>
     <header>
-
+    
         <nav class="bottom-nav">
             <a class="shiny" href="accessories.php">Accessories</a>
             <a class="shiny" href="footwear.php">Footwear</a>
             <a class="shiny" href="clothing.php">Clothing</a>
-            <a style="color:#080808" href="index.php">New arrivals</a>
-
+            <a style="color:#080808; font-weight: bold;" href="index.php">New arrivals<br>
+                <span><?php echo count($new) ?> PRODUCTS</span></a>
         </nav>
     </header>
     <div class="grid-container">
@@ -58,7 +59,6 @@ $new = getNew();
         <?php endforeach;; ?>
 
     </div>
-
 
 </body>
 

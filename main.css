@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -31,12 +32,21 @@ body {
     width: 100%;
 }
 
-.bottom-nav>a {
+.bottom-nav a {
     float: right;
     color: #CECECE;
     text-decoration: none;
     padding: 40px 30px 20px 30px;
     font-size: 50px;
+}
+
+.bottom-nav span {
+    float: left;
+    color: #080808;
+    text-decoration: none;
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 
@@ -94,6 +104,7 @@ body {
 }
 
 .grid-name {
+    margin-top: 2%;
     margin-left: 2%;
     margin-bottom: 2%;
 }
@@ -109,6 +120,19 @@ body {
 .new>span {
     border: 1px solid #5C84FC;
     color: #003FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.hot {
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.hot>span {
+    border: 1px solid #ECACAC;
+    color: #DB3D3D;
     text-transform: uppercase;
     font-weight: bold;
     padding: 2px;
